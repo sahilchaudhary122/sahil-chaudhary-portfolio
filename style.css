@@ -58,6 +58,8 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: relative;
+    z-index: 10;
 }
 .logo{
     width: 140px;
