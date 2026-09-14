@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Sahil Chaudhary Portfolio</title>
+</head>
+
+<body>
+    <!--HEADER-->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image/logo.png" alt="Logo" class="logo">
+                <ul class="nav-links" id="sidemenu" onclick="closetab()">
+                    <li>
+                        <i class="fa-solid fa-circle-xmark close-menu" onclick="closemenu()"></i>
+                    </li>
+                    <li>
+                        <a href="#header">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#projects_section">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#certificates">Certificates</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <i class="fa-solid fa-bars open-menu" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Welcome to My Portfolio</p>
+                <h1>
+                    Hi, I'm
+                    <span>Sahil Chaudhary, </span>
+                    <br>
+                    <h3>
+                        Computer Science Engineering student and developer
+                        who enjoys turning ideas into practical digital solutions.
+                    </h3>
+                </h1>
+            </div>
+        </div>
+        <img src="image/background_img.png" alt="Background Image" class="background-image">
+    </div>
+    <!--ABOUT SECTION-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <!-- ABOUT IMAGE -->
+                <div class="about-col-1">
+                    <img src="image/about.jpg" alt="About Sahil">
+                </div>
+                <!-- ABOUT CONTENT -->
+                <div class="about-col-2">
+                    <h1 class="sub-title">
+                        About Me
+                    </h1>
+                    <p>
+                        I’m Sahil Chaudhary, a Computer Science Engineering student
+                        and developer passionate about building technology that
+                        solves real-world problems.
+                        I enjoy turning ideas into practical applications and
+                        exploring areas such as Artificial Intelligence, software
+                        development, and modern web technologies.
+                        Through projects, hackathons, and continuous learning,
+                        I’m constantly challenging myself to improve my
+                        problem-solving and development skills.
+                        I believe in learning by building, experimenting with new
+                        technologies, creating meaningful projects, and learning
+                        from every challenge along the way.
+                        <br><br>
+                        My goal is to grow as a versatile software developer and
+                        build solutions that are useful, innovative, and impactful.
+                    </p>
+                    <!--TABS -->
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" data-tab="skills">
+                            Skills
+                        </p>
+                        <p class="tab-links" data-tab="experience">
+                            Experience
+                        </p>
+                        <p class="tab-links" data-tab="education">
+                            Education
+                        </p>
+                    </div>
+                    <!-- SKILLS -->
+                    <div class="tab-contents active-tab" id="skills">
+                        <div class="skill-section">
+                            <span>
+                                Programming Languages
+                            </span>
+                            <p>
+                                Java | C | Python | HTML | CSS | JavaScript
+                            </p>
+                            <br>
+                            <span>
+                                Tools & Technologies
+                            </span>
+                            <p>
+                                Git & GitHub | VS Code | Vercel
+                            </p>
+                            <br>
+                            <span>
+                                Database
+                            </span>
+                            <p>
+                                MySQL | Firebase
+                            </p>
+                            <br>
+                            <span>
+                                Core Computer Science
+                            </span>
+                            <p>
+                                Data Structures & Algorithms |
+                                Object-Oriented Programming |
+                                Computer Networks
+                            </p>
+                            <br>
+                            <span>
+                                Soft Skills
+                            </span>
+                            <p>
+                                Problem Solving |
+                                Critical Thinking |
+                                Team Collaboration |
+                                Communication |
+                                Leadership |
+                                Time Management
+                            </p>
+                        </div>
+                    </div>
+                    <!-- EXPERIENCE -->
+                    <div class="tab-contents" id="experience">
+                        <div class="experience-heading">
+                            <h3>
+                                Achievements
+                            </h3>
+                            <p>
+                                Hackathons, competitions and technical events
+                                I've participated in.
+                            </p>
+                        </div>
+                        <!--ACHIEVEMENT GRID-->
+                        <div class="achievement-certificates" id="achievementGrid">
+                            <!--01 - PITCH PERK-->
+                            <div class="achievement-card" onclick="openCertificate('image/pitchperk.png')">
+                                <img src="image/pitchperk.png" alt="Pitch Perk Certificate">
+                                <div class="achievement-info">
+                                    <span>
+                                        01
+                                    </span>
+                                    <h4>
+                                        Pitch Perk
+                                    </h4>
+                                    <p>
+                                        1st Place Achievement
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- 02 - ADOBE HACKATHON -->
+                            <div class="achievement-card" onclick="openCertificate('image/adobe_hackathon.png')">
+                                <img src="image/adobe_hackathon.png" alt="Adobe Hackathon Certificate">
+                                <div class="achievement-info">
+                                    <span>
+                                        02
+                                    </span>
+                                    <h4>
+                                        Adobe Hackathon
+                                    </h4>
+                                    <p>
+                                        Hackathon Achievement
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- 03 - DEV ARENA -->
+                            <div class="achievement-card" onclick="openCertificate('image/dev_arena.png')">
+                                <img src="image/dev_arena.png" alt="Dev Arena Certificate">
+                                <div class="achievement-info">
+                                    <span>
+                                        03
+                                    </span>
+                                    <h4>
+                                        Dev Arena '26
+                                    </h4>
+                                    <p>
+                                        8 Hour Hackathon
+                                    </p>
+                                </div>
+                            </div>
+                            <!--  04 - DRESTIEN  -->
+                            <div class="achievement-card" onclick="openCertificate('image/drestien.png')">
+                                <img src="image/drestien.png" alt="Drestien Certificate">
+                                <div class="achievement-info">
+                                    <span>
+                                        04
+                                    </span>
+                                    <h4>
+                                        Drestien '26
+                                    </h4>
+                                    <p>
+                                        Megathon '26
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- EXTRA ACHIEVEMENTS HIDDEN INITIALLY -->
+                            <!-- 05 - BHARATIYA ANTIRASHtriya -->
+                            <div class="achievement-card extra-achievement"
+                                onclick="openCertificate('image/bharatiya_antirashtriya.png')">
+                                <img src="image/bharatiya_antirashtriya.png" alt="Bharatiya Antirashtriya Certificate">
+                                <div class="achievement-info">
+                                    <span>
+                                        05
+                                    </span>
+                                    <h4>
+                                        Bharatiya Antirashtriya
+                                    </h4>
+                                    <p>
+                                        Competition Achievement
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- 06 - HACK FUSION -->
+                            <div class="achievement-card extra-achievement"
+                                onclick="openCertificate('image/hackfusion.png')">
+                                <img src="image/hackfusion.png" alt="Hack Fusion Certificate">
+                                <div class="achievement-info">
+                                    <span>
+                                        06
+                                    </span>
+                                    <h4>
+                                        Hack Fusion
+                                    </h4>
+                                    <p>
+                                        Hackathon Participation
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- 07 - INNOVATION UNBOUND-->
+                            <div class="achievement-card extra-achievement"
+                                onclick="openCertificate('image/innovation_unbound.png')">
+                                <img src="image/innovation_unbound.png" alt="Innovation Unbound Certificate">
+                                <div class="achievement-info">
+                                    <span>
+                                        07
+                                    </span>
+                                    <h4>
+                                        Innovation Unbound
+                                    </h4>
+                                    <p>
+                                        Innovation Competition
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- 
+                             EXPERIENCE SEE MORE BUTTON
+                        -->
+                            <div class="experience-more-container">
+                                <button id="seeMoreAchievementsBtn" class="see-more-btn" type="button">
+                                    See More Achievements
+                                    <span>
+                                        ↓
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- 
+                         EDUCATION
+                    = -->
+                        <div class="tab-contents" id="education">
+                            <div class="education-item">
+                                <span>
+                                    2025 - Present
+                                </span>
+                                <h3>
+                                    B.E. Computer Science Engineering
+                                </h3>
+                                <p>
+                                    Easwari Engineering College
+                                </p>
+                            </div>
+                            <div class="education-item">
+                                <span>
+                                    Computer Science
+                                </span>
+                                <h3>
+                                    Engineering & Technology
+                                </h3>
+                                <p>
+                                    Building knowledge in software development,
+                                    programming, algorithms, and modern technologies.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 
+         PROJECTS
+    = -->
+        <div id="projects_section">
+            <div class="container">
+                <h1 class="sub-title">
+                    Things I've
+                    <span>Built.</span>
+                </h1>
+                <p class="projects-intro">
+                    A collection of projects where I turn ideas into practical solutions.
+                </p>
+                <div class="projects-grid">
+                    <!-- =
+                     PROJECT 01 - RELOOP
+                -->
+                    <div class="project-card">
+                        <div class="project-card-inner">
+                            <div class="project-front">
+                                <div class="project-number">
+                                    01
+                                </div>
+                                <img src="image/reloop.png" alt="ReLoop">
+                                <div class="project-info">
+                                    <p class="project-category">
+                                        HACKATHON PROJECT
+                                    </p>
+                                    <h3>
+                                        ReLoop
+                                    </h3>
+                                    <p class="project-short">
+                                        Smart recycling and reward platform.
+                                    </p>
+                                    <div class="tech-stack">
+                                        <span>
+                                            Flutter
+                                        </span>
+                                        <span>
+                                            Firebase
+                                        </span>
+                                        <span>
+                                            AI
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-back">
+                                <p class="project-category">
+                                    01 • RELOOP
+                                </p>
+                                <h3>
+                                    ReLoop
+                                </h3>
+                                <p>
+                                    A technology-driven recycling platform designed
+                                    to encourage responsible waste disposal through
+                                    a smart collection and rewards system.
+                                </p>
+                                <div class="project-buttons">
+                                    <a href="https://github.com/sahilchaudhary122/ReLoop" target="_blank">
+                                        GitHub ↗
+                                    </a>
+                                    <!---- <a href="#" target="_blank">
+                                    Demo ↗
+                                </a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- =
+                     PROJECT 02 - AI PERSONAL TEACHER
+                -->
+                    <div class="project-card">
+                        <div class="project-card-inner">
+                            <div class="project-front">
+                                <div class="project-number">
+                                    02
+                                </div>
+                                <img src="image/ai-teacher.png" alt="AI Personal Teacher">
+                                <div class="project-info">
+                                    <p class="project-category">
+                                        AI PROJECT
+                                    </p>
+                                    <h3>
+                                        AI Personal Teacher
+                                    </h3>
+                                    <p class="project-short">
+                                        AI-powered personalized learning platform.
+                                    </p>
+                                    <div class="tech-stack">
+                                        <span>
+                                            AI
+                                        </span>
+                                        <span>
+                                            JavaScript
+                                        </span>
+                                        <span>
+                                            API
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-back">
+                                <p class="project-category">
+                                    02 • AI PERSONAL TEACHER
+                                </p>
+                                <h3>
+                                    AI Personal Teacher
+                                </h3>
+                                <p>
+                                    An AI-powered learning platform designed to
+                                    provide students with personalized assistance
+                                    and interactive learning support.
+                                </p>
+                                <div class="project-buttons">
+                                    <a href="https://github.com/sahilchaudhary122/AI_Personal_Teacher/tree/main"
+                                        target="_blank">
+                                        GitHub ↗
+                                    </a>
+                                    <!----- <a href="#" target="_blank">
+                                    Live Demo ↗
+                                </a> ------>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- =
+                     PROJECT 03 - SAFE FINANCE
+                -->
+                    <div class="project-card">
+                        <div class="project-card-inner">
+                            <div class="project-front">
+                                <div class="project-number">
+                                    03
+                                </div>
+                                <img src="image/safefinance.png" alt="SafeFinance">
+                                <div class="project-info">
+                                    <p class="project-category">
+                                        FINTECH / AI
+                                    </p>
+                                    <h3>
+                                        SafeFinance
+                                    </h3>
+                                    <p class="project-short">
+                                        AI-powered financial safety solution.
+                                    </p>
+                                    <div class="tech-stack">
+                                        <span>
+                                            AI
+                                        </span>
+                                        <span>
+                                            JavaScript
+                                        </span>
+                                        <span>
+                                            Web
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-back">
+                                <p class="project-category">
+                                    03 • SAFEFINANCE
+                                </p>
+                                <h3>
+                                    SafeFinance
+                                </h3>
+                                <p>
+                                    A financial safety solution designed to help
+                                    users identify potential risks and make safer
+                                    decisions in the digital financial environment.
+                                </p>
+                                <div class="project-buttons">
+                                    <a href="https://github.com/sahilchaudhary122/SafeFinance" target="_blank">
+                                        GitHub ↗
+                                    </a>
+                                    <!------ <a href="#" target="_blank">
+                                    Live Demo ↗
+                                </a> ---->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 
+                 OTHER PROJECTS
+            = -->
+                <div id="moreProjects" class="projects-grid more-projects">
+                    <!-- PROJECT 04 -->
+                    <div class="project-card">
+                        <div class="project-card-inner">
+                            <div class="project-front">
+                                <div class="project-number">
+                                    04
+                                </div>
+                                <div class="project-placeholder">
+                                    DR
+                                </div>
+                                <div class="project-info">
+                                    <p class="project-category">
+                                        CODEALPHA INTERNSHIP
+                                    </p>
+                                    <h3>
+                                        Data Redundancy Removal System
+                                    </h3>
+                                    <p class="project-short">
+                                        System for identifying and removing redundant data.
+                                    </p>
+                                    <div class="tech-stack">
+                                        <span>
+                                            Python
+                                        </span>
+                                        <span>
+                                            SQL
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-back">
+                                <p class="project-category">
+                                    04 • CODEALPHA
+                                </p>
+                                <h3>
+                                    Data Redundancy Removal System
+                                </h3>
+                                <p>
+                                    A system developed to identify duplicate or
+                                    redundant data and improve data organization
+                                    and storage efficiency.
+                                </p>
+                                <div class="project-buttons">
+                                    <a
+                                        href="https://github.com/sahilchaudhary122/Codealpha_tasks/tree/main/Task_1_Data_Redundancy_Removal_System">
+                                        GitHub ↗
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- PROJECT 05 -->
+                    <div class="project-card">
+                        <div class="project-card-inner">
+                            <div class="project-front">
+                                <div class="project-number">
+                                    05
+                                </div>
+                                <div class="project-placeholder">
+                                    SQL
+                                </div>
+                                <div class="project-info">
+                                    <p class="project-category">
+                                        CODEALPHA INTERNSHIP
+                                    </p>
+                                    <h3>
+                                        SQL Injection Protection
+                                    </h3>
+                                    <p class="project-short">
+                                        Application focused on preventing SQL injection attacks.
+                                    </p>
+                                    <div class="tech-stack">
+                                        <span>
+                                            Python
+                                        </span>
+                                        <span>
+                                            SQL
+                                        </span>
+                                        <span>
+                                            Security
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-back">
+                                <p class="project-category">
+                                    05 • CODEALPHA
+                                </p>
+                                <h3>
+                                    SQL Injection Protection
+                                </h3>
+                                <p>
+                                    A security-focused project demonstrating
+                                    techniques for protecting database-driven
+                                    applications against SQL injection vulnerabilities.
+                                </p>
+                                <div class="project-buttons">
+                                    <a
+                                        href="https://github.com/sahilchaudhary122/Codealpha_tasks/tree/main/Task_1_Data_Redundancy_Removal_System">
+                                        GitHub ↗
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- PROJECT 06 -->
+                    <div class="project-card">
+                        <div class="project-card-inner">
+                            <div class="project-front">
+                                <div class="project-number">
+                                    06
+                                </div>
+                                <div class="project-placeholder">
+                                    AI
+                                </div>
+                                <div class="project-info">
+                                    <p class="project-category">
+                                        CODEALPHA INTERNSHIP
+                                    </p>
+                                    <h3>
+                                        Chatbot
+                                    </h3>
+                                    <p class="project-short">
+                                        Interactive conversational AI application.
+                                    </p>
+                                    <div class="tech-stack">
+                                        <span>
+                                            Python
+                                        </span>
+                                        <span>
+                                            AI
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-back">
+                                <p class="project-category">
+                                    06 • CODEALPHA
+                                </p>
+                                <h3>
+                                    Chatbot
+                                </h3>
+                                <p>
+                                    An interactive chatbot designed to understand
+                                    user input and provide automated conversational
+                                    responses.
+                                </p>
+                                <div class="project-buttons">
+                                    <a
+                                        href="https://github.com/sahilchaudhary122/Codealpha_tasks/tree/main/Task_3_AI_Powered_Chatbot">
+                                        GitHub ↗
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- PROJECT SEE MORE -->
+                <div class="see-more-container">
+                    <button id="seeMoreBtn" class="see-more-btn">
+                        See More Projects
+                        <span>
+                            ↓
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- 
+         CERTIFICATIONS
+    = -->
+        <div id="certificates">
+            <div class="container">
+                <h1 class="sub-title">
+                    My
+                    <span>Certifications</span>
+                </h1>
+                <p class="certification-intro">
+                    Certifications and learning experiences that have strengthened
+                    my technical knowledge and development skills.
+                </p>
+                <!-- =
+                 TOP 3 CERTIFICATES
+            -->
+                <div class="certifications-grid">
+                    <!-- 01 CS50W -->
+                    <div class="certificate-card">
+                        <img src="image/certificates/cs50w.png" alt="HarvardX CS50W Certificate">
+                        <div class="certificate-overlay">
+                            <span class="certificate-number">
+                                01
+                            </span>
+                            <span class="certificate-category">
+                                HARVARDX
+                            </span>
+                            <h3>
+                                CS50W
+                            </h3>
+                            <h4>
+                                Web Programming with Python and JavaScript
+                            </h4>
+                            <p>
+                                Completed CS50W, gaining practical experience
+                                in web programming with Python and JavaScript,
+                                databases, APIs and web application development.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- 02 CODEALPHA -->
+                    <div class="certificate-card">
+                        <img src="image/certificates/codealpha.png"
+                            alt="CodeAlpha Cloud Computing Internship Certificate">
+                        <div class="certificate-overlay">
+                            <span class="certificate-number">
+                                02
+                            </span>
+                            <span class="certificate-category">
+                                INTERNSHIP
+                            </span>
+                            <h3>
+                                CodeAlpha
+                            </h3>
+                            <h4>
+                                Cloud Computing Virtual Internship
+                            </h4>
+                            <p>
+                                Completed a Cloud Computing virtual internship
+                                involving practical software development,
+                                problem-solving and hands-on project work.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- 03 NPTEL -->
+                    <div class="certificate-card">
+                        <img src="image/certificates/nptel-joy-python.png"
+                            alt="NPTEL Joy of Computing using Python Certificate">
+                        <div class="certificate-overlay">
+                            <span class="certificate-number">
+                                03
+                            </span>
+                            <span class="certificate-category">
+                                NPTEL
+                            </span>
+                            <h3>
+                                Joy of Computing using Python
+                            </h3>
+                            <h4>
+                                Python Programming
+                            </h4>
+                            <p>
+                                Completed NPTEL's Joy of Computing using Python,
+                                strengthening Python programming, computational
+                                thinking and problem-solving skills.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 
+                 MORE CERTIFICATES
+            -->
+                <div id="moreCertificates" class="certifications-grid more-certificates">
+                    <!-- 04 IBM -->
+                    <div class="certificate-card">
+                        <img src="image/certificates/ibm-ai-sustainability.png"
+                            alt="IBM AI and Sustainability Certificate">
+                        <div class="certificate-overlay">
+                            <span class="certificate-number">
+                                04
+                            </span>
+                            <span class="certificate-category">
+                                IBM SKILLSBUILD
+                            </span>
+                            <h3>
+                                AI + Sustainability
+                            </h3>
+                            <h4>
+                                Virtual Internship
+                            </h4>
+                            <p>
+                                Completed an AI and sustainability-focused
+                                virtual internship exploring technology-driven
+                                approaches to sustainable solutions.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- 05 PYTHON -->
+                    <div class="certificate-card">
+                        <img src="image/certificates/python.png" alt="Basics of Python Certificate">
+                        <div class="certificate-overlay">
+                            <span class="certificate-number">
+                                05
+                            </span>
+                            <span class="certificate-category">
+                                INFOSYS SPRINGBOARD
+                            </span>
+                            <h3>
+                                Basics of Python
+                            </h3>
+                            <h4>
+                                Python Programming
+                            </h4>
+                            <p>
+                                Completed a foundational Python course covering
+                                core programming concepts and strengthening
+                                programming fundamentals.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- 06 MONGODB AI -->
+                    <div class="certificate-card">
+                        <img src="image/certificates/mongodb-ai.png" alt="AI Data Strategy with MongoDB Certificate">
+                        <div class="certificate-overlay">
+                            <span class="certificate-number">
+                                06
+                            </span>
+                            <span class="certificate-category">
+                                MONGODB
+                            </span>
+                            <h3>
+                                AI Data Strategy
+                            </h3>
+                            <h4>
+                                AI Data Strategy with MongoDB
+                            </h4>
+                            <p>
+                                Explored the role of data and MongoDB in
+                                AI-oriented applications and modern
+                                data strategies.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- 07 MONGODB BASICS -->
+                    <div class="certificate-card">
+                        <img src="image/certificates/mongodb-basics.png" alt="MongoDB Basics Certificate">
+                        <div class="certificate-overlay">
+                            <span class="certificate-number">
+                                07
+                            </span>
+                            <span class="certificate-category">
+                                MONGODB
+                            </span>
+                            <h3>
+                                MongoDB Basics
+                            </h3>
+                            <h4>
+                                MongoDB Basics for Students
+                            </h4>
+                            <p>
+                                Developed foundational knowledge of MongoDB
+                                and document-oriented database concepts.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- 08 DATA STRUCTURES -->
+                    <div class="certificate-card">
+                        <img src="image/certificates/data-structures-c.png" alt="Data Structures using C Certificate">
+                        <div class="certificate-overlay">
+                            <span class="certificate-number">
+                                08
+                            </span>
+                            <span class="certificate-category">
+                                CODETANTRA
+                            </span>
+                            <h3>
+                                Data Structures using C
+                            </h3>
+                            <h4>
+                                Data Structures & Algorithms
+                            </h4>
+                            <p>
+                                Strengthened programming and problem-solving
+                                fundamentals through data structures
+                                implemented using C.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- 09 LINUX -->
+                    <div class="certificate-card">
+                        <img src="image/certificates/linux.png" alt="Basic Commands in Linux Certificate">
+                        <div class="certificate-overlay">
+                            <span class="certificate-number">
+                                09
+                            </span>
+                            <span class="certificate-category">
+                                CURSA
+                            </span>
+                            <h3>
+                                Basic Commands in Linux
+                            </h3>
+                            <h4>
+                                Linux Fundamentals
+                            </h4>
+                            <p>
+                                Learned essential Linux command-line operations
+                                and fundamental concepts for working with
+                                Linux environments.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- CERTIFICATE SEE MORE -->
+                <div class="certificates-more-container">
+                    <button id="seeMoreCertificatesBtn" class="see-more-btn" type="button">
+                        See More Certificates
+                        <span>
+                            ↓
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- 
+         CONTACT
+    = -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">
+                            Contact Me
+                        </h1>
+                        <p>
+                            sahilchaudharygkc@gmail.com
+                        </p>
+                        <p>
+                            +91 6206130166
+                        </p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/sahil-chaudhary-2025eeccse/">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/sahilchaudhary122">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://www.instagram.com/_.sahilchaudhary/">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </div>
+                        <a href="image/resume.pdf" download class="btn btn2">
+                            Download CV
+                        </a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="Submit_to_Contact_Form">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">
+                                Submit
+                            </button>
+                        </form>
+                        <div id="msg"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>
+                    Copyright ©Sahil Chaudhary<i> </i>
+                </p>
+            </div>
+        </div>
+        <!-- CERTIFICATE IMAGE VIEWER -->
+        <div id="certificateLightbox" class="certificate-lightbox">
+            <button class="certificate-close" onclick="closeCertificate()">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <button class="certificate-prev" onclick="changeCertificate(-1)">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <img id="certificateFullImage" src="" alt="Certificate">
+            <button class="certificate-next" onclick="changeCertificate(1)">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
+        <script src="script.js"></script>
+</body>
+
+</html>
